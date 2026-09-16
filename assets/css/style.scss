@@ -1,0 +1,365 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+
+/* ------------------------------------------------------------------ *
+ *  Masala Coffee guide — pastel look, built for people who are not
+ *  comfortable with computers: big type, strong colour cues, big taps.
+ * ------------------------------------------------------------------ */
+
+:root {
+  --paper: #fbfaf8;
+  --ink: #1f1d1b;
+  --ink-soft: #55504a;
+  --rule: #e4dfd8;
+  --peach: #ffd8c2;
+  --sky: #cfe6f7;
+  --gold: #f3e2a7;
+  --coral: #f08a5d;
+  --lavender: #e4d8ff;
+  --mint: #d6f2e4;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: block;
+  width: auto;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 20px 96px;
+}
+
+/* the minimal theme's two-column header/section split, undone */
+header,
+section,
+footer {
+  float: none;
+  width: auto;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  position: static;
+}
+
+header {
+  border-bottom: 3px solid var(--peach);
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+}
+
+header h1 { margin-top: 0; }
+header ul, header p.view { display: none; }
+
+/* ---------- typography ---------- */
+
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2.3rem; margin: 0 0 .4em; }
+
+h2 {
+  font-size: 1.7rem;
+  margin: 2.2em 0 .6em;
+  padding-bottom: .3em;
+  border-bottom: 2px solid var(--rule);
+}
+
+h3 { font-size: 1.35rem; margin: 1.6em 0 .5em; }
+
+p, li { color: var(--ink); }
+
+a {
+  color: #a04516;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover { color: var(--coral); }
+
+/* big enough to hit with a thumb on a phone: 1.4 x 17px + 2 x 11px = 45px */
+li > a,
+td a,
+.starthere a {
+  display: inline-block;
+  padding: 11px 2px;
+  line-height: 1.4;
+}
+
+p a { padding: 0; display: inline; }
+
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .92em;
+}
+
+code {
+  background: #f1ede7;
+  border-radius: 4px;
+  padding: .12em .35em;
+  color: #6b3c14;
+}
+
+pre {
+  background: #2c2a27;
+  color: #f4f1ec;
+  border-radius: 10px;
+  padding: 16px 18px;
+  overflow-x: auto;
+  border: 0;
+}
+
+pre code { background: none; color: inherit; padding: 0; }
+
+/* ---------- "Start here" box ---------- */
+
+.starthere {
+  background: linear-gradient(180deg, var(--gold), #fbf3d8);
+  border: 2px solid #e6d18c;
+  border-radius: 16px;
+  padding: 20px 26px 24px;
+  margin: 28px 0 36px;
+}
+
+.starthere h2 {
+  border: 0;
+  margin: 0 0 .3em;
+  font-size: 1.45rem;
+}
+
+.starthere ul { margin: .4em 0; padding-left: 1.2em; }
+.starthere li { margin: 0; }
+
+/* ---------- situation cards ---------- */
+
+.situation {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 18px;
+  margin: 34px 0;
+  padding: 0 26px 26px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(31, 29, 27, .05);
+}
+
+.situation > h3:first-child {
+  font-size: 1.5rem;
+  margin: 0 -26px 24px;
+  padding: 20px 26px;
+  background: var(--peach);
+  border-bottom: 1px solid rgba(31, 29, 27, .08);
+}
+
+.situation--peach > h3:first-child { background: var(--peach); }
+.situation--sky > h3:first-child { background: var(--sky); }
+.situation--gold > h3:first-child { background: var(--gold); }
+.situation--lavender > h3:first-child { background: var(--lavender); }
+.situation--mint > h3:first-child { background: var(--mint); }
+
+/* ---------- numbered steps with big circled numbers ---------- */
+
+.situation > ol {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+  margin: 1.4em 0;
+}
+
+.situation > ol > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 52px;
+  margin-bottom: 30px;
+}
+
+.situation > ol > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- pictures and captions ---------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(31, 29, 27, .14);
+  display: block;
+  margin: 14px 0 8px;
+}
+
+/* the italic line under each picture is its caption */
+p > em:only-child,
+li > p > em:only-child {
+  display: block;
+  font-size: .9rem;
+  font-style: normal;
+  color: var(--ink-soft);
+  margin: -2px 0 18px;
+}
+
+/* ---------- callouts ---------- */
+
+blockquote {
+  border: 0;
+  border-left: 6px solid var(--sky);
+  background: #eff7fd;
+  border-radius: 0 12px 12px 0;
+  margin: 20px 0;
+  padding: 14px 18px 14px 46px;
+  color: var(--ink);
+  position: relative;
+  font-style: normal;
+}
+
+blockquote > :first-child { margin-top: 0; }
+blockquote > :last-child { margin-bottom: 0; }
+
+blockquote::before {
+  content: "ℹ️";
+  position: absolute;
+  left: 14px;
+  top: 13px;
+  font-size: 1.1rem;
+}
+
+/* set by assets/js/guide.js from the first bold word in the quote */
+blockquote.is-tip { border-left-color: #3f9d72; background: #eefaf3; }
+blockquote.is-tip::before { content: "\1F4A1"; }
+
+blockquote.is-careful { border-left-color: #c8501f; background: #fdf0e9; }
+blockquote.is-careful::before { content: "\26A0\FE0F"; }
+
+blockquote.is-remember { border-left-color: #3d7fb0; background: #eff7fd; }
+blockquote.is-remember::before { content: "\1F4CC"; }
+
+blockquote.is-done {
+  border-left-color: #3f9d72;
+  background: #eefaf3;
+  border-radius: 12px;
+  border-left-width: 6px;
+  font-weight: 600;
+  margin-top: 26px;
+}
+
+blockquote.is-done::before { content: "\2705"; }
+
+/* ---------- tables ---------- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 18px 0 24px;
+  font-size: .96rem;
+  display: table;
+}
+
+th, td {
+  border: 1px solid var(--rule);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { background: #f4efe8; font-weight: 700; }
+tr:nth-child(even) td { background: #fdfcfa; }
+
+.table-scroll { overflow-x: auto; }
+
+/* ---------- sticky table of contents ---------- */
+
+#guide-toc {
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  #guide-toc {
+    display: block;
+    position: fixed;
+    top: 32px;
+    right: max(20px, calc(50vw - 690px));
+    width: 230px;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    font-size: .88rem;
+    line-height: 1.35;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 14px 16px;
+  }
+
+  #guide-toc h4 {
+    margin: 0 0 8px;
+    font-size: .95rem;
+  }
+
+  #guide-toc ol { list-style: none; margin: 0; padding: 0; }
+  #guide-toc li { margin: 0 0 2px; }
+
+  #guide-toc a {
+    display: block;
+    min-height: 0;
+    line-height: 1.35;
+    padding: 7px 8px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--ink-soft);
+  }
+
+  #guide-toc a:hover { background: #f4efe8; color: var(--ink); }
+}
+
+/* ---------- phones ---------- */
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .wrapper { padding: 20px 16px 72px; }
+  h1 { font-size: 1.85rem; }
+  h2 { font-size: 1.4rem; }
+  .situation { padding: 0 16px 20px; border-radius: 14px; }
+  .situation > h3:first-child { margin: 0 -16px 18px; padding: 16px; font-size: 1.25rem; }
+  .situation > ol > li { padding-left: 42px; }
+  .situation > ol > li::before { width: 30px; height: 30px; font-size: .95rem; }
+  table { font-size: .9rem; }
+  th, td { padding: 8px 9px; }
+}
+
+@media print {
+  #guide-toc { display: none; }
+  .situation { break-inside: avoid; box-shadow: none; }
+  img { box-shadow: none; }
+}
