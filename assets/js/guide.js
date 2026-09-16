@@ -25,18 +25,51 @@
       box.appendChild(t);
     });
 
-    // 3. A sticky contents list, on wide screens only.
+    // 3. A contents list: a left sidebar on wide screens, a collapsible
+    //    "On this page" block on tablet and phone.
     var heads = [].slice.call(document.querySelectorAll('h2[id], h3[id]'))
       .filter(function (h) { return h.id && h.id !== 'table-of-contents'; });
     if (heads.length < 4) return;
+
     var nav = document.createElement('nav');
     nav.id = 'guide-toc';
     nav.setAttribute('aria-label', 'On this page');
-    var html = '<h4>On this page</h4><ol>';
+
+    var html = '<details open><summary>On this page</summary><ol>';
     heads.forEach(function (h) {
-      html += '<li><a href="#' + h.id + '">' + h.textContent.trim() + '</a></li>';
+      // Join the leading emoji to the first real word with a non-breaking
+      // space so a narrow column never wraps between them.
+      var label = h.textContent.trim().replace(/^(\S+)\s+/, '$1 ');
+      html += '<li><a href="#' + h.id + '">' + label + '</a></li>';
     });
-    nav.innerHTML = html + '</ol>';
-    document.body.appendChild(nav);
+    nav.innerHTML = html + '</ol></details>';
+
+    document.body.insertBefore(nav, document.body.firstChild);
+
+    // 4. Highlight the section currently in view.
+    if (!('IntersectionObserver' in window)) return;
+    var links = {};
+    nav.querySelectorAll('a').forEach(function (a) {
+      links[a.getAttribute('href').slice(1)] = a;
+    });
+    var activeLink = null;
+    function setActive(id) {
+      var a = links[id];
+      if (!a || a === activeLink) return;
+      if (activeLink) activeLink.classList.remove('is-active');
+      a.classList.add('is-active');
+      activeLink = a;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      var visible = entries.filter(function (e) { return e.isIntersecting; });
+      if (!visible.length) return;
+      visible.sort(function (a, b) {
+        return a.boundingClientRect.top - b.boundingClientRect.top;
+      });
+      setActive(visible[0].target.id);
+    }, { rootMargin: '0px 0px -70% 0px', threshold: [0, 1] });
+
+    heads.forEach(function (h) { observer.observe(h); });
   });
 })();
