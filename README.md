@@ -153,37 +153,31 @@ Bolgatty Palace Lawns · tickets on BookMyShow.
    *Venue: `Bolgatty Palace Lawns`. If the venue is not announced yet, leave
    it as "Venue to be announced".*
 
-6. Type a **Web address** for the show.
-
-   ![The Web address box with 2027-02-14-kochi-kerala typed in](img/ex-01-6-weburl.png)
-
-   *Use the same shape every time: `year-month-day-city-state`, all small
-   letters, hyphens instead of spaces — here `2027-02-14-kochi-kerala`.*
-
-   > **Careful:** a show with no web address will **not** appear on the Tour
-   > page. This is the one thing people forget.
-
-7. Paste the **Ticket URL**.
+6. Paste the **Ticket URL**.
 
    ![The Ticket URL box with a BookMyShow link pasted in](img/ex-01-7-ticket.png)
 
    *Paste the whole BookMyShow (or other) link. Leave it empty if tickets are
    not on sale yet.*
 
-8. Click the **upload arrow** in the Poster picture box.
+   > The **Web address** field above the ticket URL fills itself in
+   > automatically from the date, city and state as soon as you save — you
+   > never need to type it. Leave it alone.
+
+7. Click the **upload arrow** in the Poster picture box.
 
    ![The Poster picture box with the upload arrow circled](img/ex-01-8-poster.png)
 
    *Click the **↑** button, then pick the poster from your computer or phone.
    You can also drag the picture straight into the dotted box.*
 
-9. Check the poster looks right.
+8. Check the poster looks right.
 
    ![The poster showing inside the Poster picture box](img/ex-01-9-poster-done.png)
 
    *The poster now shows in the box. A tall (portrait) picture works best here.*
 
-10. Fill in **Ticket status lines** — the small rows shown on the show card.
+9. Fill in **Ticket status lines** — the small rows shown on the show card.
 
     ![The Ticket status lines box with one Tickets line typed in](img/ex-01-10-statuslines.png)
 
@@ -199,7 +193,7 @@ Bolgatty Palace Lawns · tickets on BookMyShow.
     ("Sold out") or `info`. Leave the box empty if you are not sure — the show
     still works.*
 
-11. Click the **blue tick (✓)** at the top right to save.
+10. Click the **blue tick (✓)** at the top right to save.
 
     ![The blue tick save button at the top right](img/ex-01-11-save.png)
 
@@ -218,7 +212,6 @@ Bolgatty Palace Lawns · tickets on BookMyShow.
 
 #### Common mistakes
 
-- Leaving **Web address** empty — the show will not show on the Tour page.
 - Leaving **Status** on something other than `Upcoming`.
 - Using a wide photo as the poster — posters look best tall.
 
@@ -281,7 +274,8 @@ has already happened.
 the site, linked to that show.
 
 **You will need:** the pictures on your computer, the album name, and the
-show's web address (from step 6 of the show recipe above).
+show's web address (it filled itself in automatically when you saved the
+show recipe above — open the show and copy it from the **Web address** box).
 
 **Our example:** an album called "Live in Kochi, Feb 2027" with five pictures.
 
@@ -309,8 +303,9 @@ show's web address (from step 6 of the show recipe above).
 
    ![The Show Slug box with 2027-02-14-kochi-kerala typed in](img/ex-03-4-showlink.png)
 
-   *`2027-02-14-kochi-kerala` — exactly what you typed in step 6 of the show
-   recipe. This is what links the album to the show.*
+   *`2027-02-14-kochi-kerala` — exactly what filled itself in on the show's
+   own **Web address** box in the show recipe above. This is what links the
+   album to the show.*
 
 5. Scroll to **Photos** and click **Create New** — once for each picture.
 
@@ -802,7 +797,8 @@ Every single save is kept. You can always go back.
 
 **My new show is not on the Tour page.**
 
-Check the **Web address** box is filled in. A show without one is skipped.
+Check **Status** is set to `Upcoming` — the **Web address** box fills itself
+in automatically, so that is not usually the problem.
 
 **My picture looks cropped or squashed.**
 
@@ -848,10 +844,11 @@ blocks, or anything that is not in this guide.
 
 ### What a "web address" looks like
 
-![The Web address box with 2027-02-14-kochi-kerala typed in](img/ex-01-6-weburl.png)
-
-*Small letters, hyphens instead of spaces, no punctuation. This one makes the
-page `/tour/2027-02-14-kochi-kerala/`.*
+It fills itself in automatically — small letters, hyphens instead of spaces,
+no punctuation. A show on 14 February 2027 in Kochi, Kerala becomes
+`2027-02-14-kochi-kerala`, making the page `/tour/2027-02-14-kochi-kerala/`.
+You never need to type it; you can still edit it afterwards if you ever need
+to override it.
 
 ## 8. Cheat sheet
 
@@ -859,7 +856,7 @@ Print this page and stick it on the wall.
 
 | I want to… | Go to | Then |
 | --- | --- | --- |
-| Add a show | Tour → Tour dates | Blue **+**, fill in, **don't forget the Web address**, blue tick |
+| Add a show | Tour → Tour dates | Blue **+**, fill in, blue tick (Web address fills itself in) |
 | Say a show is sold out | Tour → Tour dates | Click the show → **Status** → `Sold out` → blue tick |
 | Move an old show out of the way | Tour → Tour dates | Click the show → **Status** → `Past` → blue tick |
 | Put up photos | Media → Photo albums | Blue **+**, fill in, **Show Slug**, Photos → Create New, blue tick |
