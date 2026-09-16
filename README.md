@@ -47,9 +47,7 @@ New here? Read [Logging in](#2-logging-in) and the
 
 ## 1. What you can change, and where
 
-The admin panel lives at **`<website>/cms/admin/`** — replace `<website>` with
-whatever the site's address is at the time. The address always ends in
-`/cms/admin/`.
+The admin panel lives at **https://masalacoffee.in/cms/admin/**.
 
 The list down the left is the **sidebar**. It is grouped to match the website's
 own menu, so the name you see on the website is the name you look for here.
@@ -77,7 +75,7 @@ own menu, so the name you see on the website is the name you look for here.
 
 ## 2. Logging in
 
-1. Go to `<website>/cms/admin/`.
+1. Go to https://masalacoffee.in/cms/admin/.
 2. Type your email and password, then click the blue **Sign In** button.
 
 ![The sign-in screen with the Sign In button circled](img/01-login.png)
