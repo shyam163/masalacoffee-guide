@@ -643,7 +643,12 @@ new banner) a wide picture.
    *`Draft` prepares a banner for later. `Archived` retires an old one
    without deleting it. Save with the blue tick.*
 
-4. To change the **order**, drag the banners in the list.
+4. To change the **big band photo** in the middle of the homepage — the one
+   the wordmark sits beside — open **Settings → Site settings** instead and
+   pick a wide picture in **Homepage main photo**; leave it empty and the site
+   uses the newest photo album's cover.
+
+5. To change the **order**, drag the banners in the list.
 
    ![The list of banners with a drag handle circled](img/ex-07-4-reorder.png)
 
