@@ -66,7 +66,7 @@ own menu, so the name you see on the website is the name you look for here.
 | Videos | **Media → Video collections**, **Media → Videos** |
 | Photos | **Media → Photo albums**, **Media → Photos** |
 | Homepage banner | **Homepage → Homepage banner** |
-| Homepage tiles | **Homepage → Homepage tiles** |
+| Homepage tiles | **Homepage → Homepage tiles** (the "New merch" and "Latest release" tiles: leave Picture and Link empty to auto-show the newest merch / latest release, or fill them in to override) |
 | Help, Terms, Privacy, Fans pages | **Fans → Pages** |
 | Newsletter sign-ups | **Fans → Newsletter sign-ups** |
 | FAQ / the chatbot's answers | **Fans → FAQ & chatbot answers** |
