@@ -417,8 +417,8 @@ art, and the Spotify and Apple links.
 
 ### 🎧 I want to add a song to the site's music player
 
-**When to use this:** you want a song to play in the little music bar that sits
-in the bottom-left corner of the website and keeps playing while people click
+**When to use this:** you want a song to play in the slim music bar that sits
+down the left-hand edge of the website and keeps playing while people click
 around.
 
 **You will need:** the audio file on your computer — an **MP3** or **M4A** — and
@@ -467,10 +467,13 @@ the right to put it online (see the warning below).
 
 ![The music player bar playing on the homepage](img/ex-13-4-player.png)
 
-*The bar sits in the bottom-left corner. It starts silent — visitors press play
-themselves — and then keeps playing as they move from page to page. Scroll down
-and it shrinks to a small circle to stay out of the way; hover over it and it
-opens again.*
+*The bar stands upright against the left edge, halfway down: the cover at the
+top, then back / play / next, then the progress line and the time. It starts
+silent — visitors press play themselves — and then keeps playing as they move
+from page to page. Hovering it slides out the song's name. Scroll down and it
+shrinks to a small circle to stay out of the way; hover over it and it opens
+again. On a phone it sits against the **right** edge instead, so it stays clear
+of the band's name.*
 
 #### Common mistakes
 
@@ -482,7 +485,7 @@ opens again.*
 - Forgetting to set the stand-in track to `Draft`, so the placeholder is still
   the first thing people hear.
 
-> **Done ✅ — check it on the website: press play in the bottom-left corner.**
+> **Done ✅ — check it on the website: press play in the bar on the left edge.**
 
 </div>
 
