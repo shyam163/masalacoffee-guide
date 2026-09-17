@@ -465,15 +465,17 @@ the right to put it online (see the warning below).
 
 #### What it looks like on the site
 
-![The music player bar playing on the homepage](img/ex-13-4-player.png)
+![The music player as a small play-button disc on the homepage, with a note explaining it click the small disc to play; hover it to open the full controls](img/ex-13-4-player.png)
 
-*The bar stands upright against the left edge, halfway down: the cover at the
-top, then back / play / next, then the progress line and the time. It starts
-silent — visitors press play themselves — and then keeps playing as they move
-from page to page. Hovering it slides out the song's name. Scroll down and it
-shrinks to a small circle to stay out of the way; hover over it and it opens
-again. On a phone it sits against the **right** edge instead, so it stays clear
-of the band's name.*
+*It starts as a small circle against the left edge, halfway down, showing
+nothing but a play button — click it and it starts playing right there,
+without opening anything. Hover (or, on a phone, tap the little arrow next to
+it) to open the full bar: cover, back / play / next, the progress line and the
+time; hovering it also slides out the song's name. It stays playing as
+visitors move from page to page, and closes itself back down to the circle a
+few seconds after they stop interacting with it, or if they press Escape. On a
+phone it sits against the **right** edge instead, so it stays clear of the
+band's name.*
 
 #### Common mistakes
 
