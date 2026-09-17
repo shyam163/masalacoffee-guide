@@ -30,6 +30,7 @@ New here? Read [Logging in](#2-logging-in) and the
    - [🎫 Tickets sold out, or the show is over](#-tickets-sold-out-or-the-show-is-over)
    - [📸 I want to put up photos from last night](#-i-want-to-put-up-photos-from-last-night)
    - [🎵 We released a new song](#-we-released-a-new-song)
+   - [🎧 I want to add a song to the site's music player](#-i-want-to-add-a-song-to-the-sites-music-player)
    - [🎬 We put a new video on YouTube](#-we-put-a-new-video-on-youtube)
    - [📰 I want to tell fans something](#-i-want-to-tell-fans-something)
    - [🏠 I want to change the big banner on the homepage](#-i-want-to-change-the-big-banner-on-the-homepage)
@@ -63,6 +64,7 @@ own menu, so the name you see on the website is the name you look for here.
 | News, Press, Features, fan stories | **News → News & stories** |
 | Band members | **Band → Band members** |
 | Releases, Songs & lyrics | **Music → Releases**, **Music → Songs & lyrics** |
+| The music player in the corner of the site | **Music → Tracks (audio for the site player)** |
 | Videos | **Media → Video collections**, **Media → Videos** |
 | Photos | **Media → Photo albums**, **Media → Photos** |
 | Homepage banner | **Homepage → Homepage banner** |
@@ -408,6 +410,79 @@ art, and the Spotify and Apple links.
   the Music page it sits on.
 
 > **Done ✅ — check it on the website at `/releases/`.**
+
+</div>
+
+<div class="situation situation--gold" markdown="1">
+
+### 🎧 I want to add a song to the site's music player
+
+**When to use this:** you want a song to play in the little music bar that sits
+in the bottom-left corner of the website and keeps playing while people click
+around.
+
+**You will need:** the audio file on your computer — an **MP3** or **M4A** — and
+the right to put it online (see the warning below).
+
+**Our example:** a live recording called "Kaantha (Live at Kochi)".
+
+> ⚠️ **Only upload music the band owns.** Anything you put here plays to the
+> whole internet, and the file itself can be downloaded. If a song is tied up
+> in a label or publisher deal, **ask first** — or upload a 60-second preview
+> instead of the whole track. When in doubt, don't.
+
+1. Open **🎵 Music → Tracks (audio for the site player)** in the left-hand menu.
+   This is the list of everything the player can play.
+
+   ![The Directus menu with Tracks highlighted](img/ex-13-1-tracks-list.png)
+
+   *You will see one row called "[placeholder] Lo-fi demo loop" — that is the
+   stand-in tune that plays until real songs are added.*
+
+2. Click the blue **+** at the top right. Fill in the **Title** (and the
+   **Artist**, if it is not just "Masala Coffee"), then click the
+   **Audio file** box and choose your MP3 from your computer.
+
+   ![The new track form with the Audio file box highlighted](img/ex-13-2-new-track.png)
+
+   *Only the **Title** and the **Audio file** are required. **Cover picture** is
+   optional — if you leave it empty and pick a **Release**, the player borrows
+   that release's cover.*
+
+3. Set **Status** to `Published`, then save with the blue tick at the top right.
+
+   ![The finished track with Status published and the save tick highlighted](img/ex-13-3-save.png)
+
+   *Nothing appears on the website until the status is `Published` and you have
+   pressed the tick.*
+
+4. Once there is real music in the list, hide the stand-in: open
+   **[placeholder] Lo-fi demo loop**, set its **Status** to `Draft`, and save.
+   It stops playing on the site but is not deleted.
+
+   > **Tip:** the order of the list is the order it plays in. Drag the rows in
+   > the **Tracks** list to change it.
+
+#### What it looks like on the site
+
+![The music player bar playing on the homepage](img/ex-13-4-player.png)
+
+*The bar sits in the bottom-left corner. It starts silent — visitors press play
+themselves — and then keeps playing as they move from page to page. Scroll down
+and it shrinks to a small circle to stay out of the way; hover over it and it
+opens again.*
+
+#### Common mistakes
+
+- Leaving **Status** on `Draft`, so the song never reaches the site.
+- Uploading a video file or a WAV. It must be an **MP3** or **M4A**, or the
+  player cannot play it.
+- Uploading a very long, very large file. Keep it under about 10 MB so it
+  starts quickly on a phone.
+- Forgetting to set the stand-in track to `Draft`, so the placeholder is still
+  the first thing people hear.
+
+> **Done ✅ — check it on the website: press play in the bottom-left corner.**
 
 </div>
 
@@ -860,6 +935,7 @@ Print this page and stick it on the wall.
 | Put up photos | Media → Photo albums | Blue **+**, fill in, **Show Slug**, Photos → Create New, blue tick |
 | Add a song | Music → Songs & lyrics | Blue **+**, title + written by, `Published`, blue tick |
 | Add a release | Music → Releases | Blue **+**, cover + links, Tracks → Add Existing, blue tick |
+| Add a song to the site player | Music → Tracks (audio for the site player) | Blue **+**, Title + **Audio file** (MP3/M4A), `Published`, blue tick |
 | Add a video | Media → Videos | Blue **+**, paste **just the ID**, pick the collection, blue tick |
 | Write a news post | News → News & stories | Blue **+**, `Draft` while writing, `Published` when ready |
 | Change the homepage banner | Homepage → Homepage banner | Click it → **Button text** / **Button link** → blue tick |
