@@ -37,6 +37,7 @@ New here? Read [Logging in](#2-logging-in) and the
    - [👤 A member changed, or the bio has a mistake](#-a-member-changed-or-the-bio-has-a-mistake)
    - [🤖 The chatbot got something wrong](#-the-chatbot-got-something-wrong)
    - [👕 Something about the merch shop](#-something-about-the-merch-shop)
+   - [📷 The Instagram wall on the homepage](#-the-instagram-wall-on-the-homepage)
    - [📬 Someone signed up for the newsletter](#-someone-signed-up-for-the-newsletter)
    - [⏪ Oops — I changed the wrong thing](#-oops--i-changed-the-wrong-thing)
 5. [Picture tips](#5-picture-tips)
@@ -786,6 +787,20 @@ page.
 - Deleting a product. The next sync brings it straight back.
 
 > **Done ✅ — check it on the website at `/shop/`.**
+
+</div>
+
+<div class="situation situation--sky" markdown="1">
+
+### 📷 The Instagram wall on the homepage
+
+**When to use this:** a new Instagram post isn't showing up yet, or you want to change which
+account the wall follows.
+
+Instagram posts appear automatically within an hour of posting — nothing to do here. If a post
+is missing after that, check it's one of the newest 12 on the account (older posts scroll off the
+wall on their own, they aren't deleted from Instagram). To change the connected account, ask
+Shyam.
 
 </div>
 
