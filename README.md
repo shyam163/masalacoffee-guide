@@ -614,11 +614,19 @@ of the post.
 
 ### 🏠 I want to change the big banner on the homepage
 
-**When to use this:** the big picture and button at the top of the homepage
-need to point somewhere new.
+**When to use this:** the big pictures at the top of the homepage need
+changing, or the button under them needs to point somewhere new.
 
-**You will need:** the new button words, where it should link to, and (for a
-new banner) a wide picture.
+**You will need:** a wide photo for each banner, the button words, and where
+the button should link to.
+
+The top of the homepage is now a **slideshow of your own photographs**, one
+banner each, with the Masala Coffee logo and a button over the bottom corner.
+Every banner needs a **landscape photo** — 2400 × 1350 or larger, JPG — and
+the band's name, `Masala Coffee`, as its **Title**, which is what puts the
+glowing logo on it. (Type anything else in Title and that text is shown
+instead of the logo.) Three or four banners is a good number; more than about
+five and visitors never see the last ones.
 
 1. Open **Homepage → Homepage banner**, click the banner you want, and change
    **Button text** and **Button link**.
@@ -635,7 +643,10 @@ new banner) a wide picture.
 
    *Click the Image box, pick a wide picture in the File Library, then the
    tick at the top right. The picture must be wider than it is tall —
-   1920 × 1080 is ideal.*
+   2400 × 1350 or larger is ideal, and it is shown across the whole screen,
+   so use the good, big version of the photo rather than a small copy. Set
+   **Title** to `Masala Coffee` so the logo goes on it, and write one short
+   line in **Subtitle** — "Live across India", say.*
 
 3. Set **Status** to **Published** so it actually shows.
 
@@ -644,28 +655,35 @@ new banner) a wide picture.
    *`Draft` prepares a banner for later. `Archived` retires an old one
    without deleting it. Save with the blue tick.*
 
-4. To change the **big band photo** in the middle of the homepage — the one
-   the wordmark sits beside — open **Settings → Site settings** instead and
-   pick a wide picture in **Homepage main photo**; leave it empty and the site
-   uses the newest photo album's cover.
-
-5. To change the **order**, drag the banners in the list.
+4. To change the **order**, drag the banners in the list.
 
    ![The list of banners with a drag handle circled](img/ex-07-4-reorder.png)
 
    *Grab the **≡** handle on the left of a row and drag it up or down. The top
-   one shows first.*
+   one shows first — it is the picture everybody sees, so put the best one
+   there.*
+
+   (**Homepage main photo** in **Settings → Site settings** is left over from
+   the old homepage and is no longer shown anywhere. Ignore it.)
 
 #### What it looks like on the site
 
 ![The homepage showing the new banner](img/ex-07-5-site.png)
 
-*The homepage, with the new banner and button. Banners rotate automatically —
-the little numbers at the bottom let visitors flip between them.*
+*The homepage, with the photo filling the screen and the logo and button over
+it. Banners change by themselves every six seconds; the arrows, the numbered
+buttons and the Pause button let visitors take over, and on a phone they can
+swipe.*
 
 #### Common mistakes
 
-- A tall or square picture. It gets cropped and faces get cut off.
+- A tall or square picture. It is shown across the whole screen, so the top
+  and bottom get cropped away and faces get cut off.
+- A small or blurry copy of a photo. Use the biggest version you have.
+- A photo that is bright in the **bottom-right corner** — that is where the
+  logo and the button sit. The site darkens that corner for you, but a photo
+  that is busy there is still the hardest to read over.
+- Forgetting the **Title**. Put `Masala Coffee` there for the logo.
 - Leaving a banner on **Draft** and wondering why it never appears.
 - A **Button link** with no leading slash. Use `/tour/`, not `tour/`.
 
