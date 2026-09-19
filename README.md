@@ -69,6 +69,7 @@ own menu, so the name you see on the website is the name you look for here.
 | Videos | **Media → Video collections**, **Media → Videos** |
 | Photos | **Media → Photo albums**, **Media → Photos** |
 | Homepage banner | **Homepage → Homepage banner** |
+| Band page photo (the big photo at the top of the Band page) | **Settings → Site settings → Band photo (top of the Band page)** |
 | Homepage tiles | **Homepage → Homepage tiles** (the "New merch" and "Latest release" tiles: leave Picture and Link empty to auto-show the newest merch / latest release, or fill them in to override) |
 | Help, Terms, Privacy, Fans pages | **Fans → Pages** |
 | Newsletter sign-ups | **Fans → Newsletter sign-ups** |
@@ -665,6 +666,17 @@ five and visitors never see the last ones.
 
    (**Homepage main photo** in **Settings → Site settings** is left over from
    the old homepage and is no longer shown anywhere. Ignore it.)
+
+   The **Band photo** at the top of the Band page is a separate picture, set
+   in **Settings → Site settings → Band photo (top of the Band page)**. It
+   works best as a photo with a plain, flat-colour background, because the
+   strip around the picture is painted to match — for the current photo that
+   is a shade of yellow picked to match its own backdrop. Swapping in a photo
+   with a different-coloured background needs a small code change too (ask
+   the developer) so the strip still matches; swapping in another photo with
+   the *same* yellow backdrop needs no code change. The picture is always
+   shown in full (never cropped), so a wide group photo works best. Leave it
+   empty to hide that part of the page entirely.
 
 #### What it looks like on the site
 
