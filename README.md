@@ -438,8 +438,9 @@ the right to put it online (see the warning below).
 
    ![The Directus menu with Tracks highlighted](img/ex-13-1-tracks-list.png)
 
-   *You will see one row called "[placeholder] Lo-fi demo loop" — that is the
-   stand-in tune that plays until real songs are added.*
+   *You will see the band's ten songs, in the order they play, plus one greyed-out
+   row called "[placeholder] Lo-fi demo loop" — that is the old stand-in tune,
+   kept but switched off.*
 
 2. Click the blue **+** at the top right. Fill in the **Title** (and the
    **Artist**, if it is not just "Masala Coffee"), then click the
@@ -458,12 +459,19 @@ the right to put it online (see the warning below).
    *Nothing appears on the website until the status is `Published` and you have
    pressed the tick.*
 
-4. Once there is real music in the list, hide the stand-in: open
-   **[placeholder] Lo-fi demo loop**, set its **Status** to `Draft`, and save.
-   It stops playing on the site but is not deleted.
+4. That's it — the song joins the ten already there.
 
    > **Tip:** the order of the list is the order it plays in. Drag the rows in
-   > the **Tracks** list to change it.
+   > the **Tracks** list to change it. Today they run in order of how popular
+   > each song is (Kaantha Njaanum Varaam first, then Munbe Vaa, then Aalayal
+   > Thara Venam); if you would rather lead with a new single, just drag it to
+   > the top.
+
+   > **A note on how loud it is.** The ten songs already on the site were all
+   > levelled to the same loudness, so none of them jumps out. A song you upload
+   > yourself has not been through that, so it may sound noticeably louder or
+   > quieter than the rest. If it does, ask whoever looks after the site to run
+   > it through the same step.
 
 #### What it looks like on the site
 
@@ -479,15 +487,19 @@ few seconds after they stop interacting with it, or if they press Escape. On a
 phone it sits against the **right** edge instead, so it stays clear of the
 band's name.*
 
+*The coloured rings drifting behind the homepage follow the beat of whatever
+is playing — automatically, a few minutes after you upload a song. There is
+nothing to set up and nothing to fill in.*
+
 #### Common mistakes
 
 - Leaving **Status** on `Draft`, so the song never reaches the site.
 - Uploading a video file or a WAV. It must be an **MP3** or **M4A**, or the
   player cannot play it.
 - Uploading a very long, very large file. Keep it under about 10 MB so it
-  starts quickly on a phone.
-- Forgetting to set the stand-in track to `Draft`, so the placeholder is still
-  the first thing people hear.
+  starts quickly on a phone — the songs already on the site are 4–7 MB each.
+- Re-publishing the old "[placeholder] Lo-fi demo loop" row by accident. Leave
+  it on `Draft`.
 
 > **Done ✅ — check it on the website: press play in the bar on the left edge.**
 
