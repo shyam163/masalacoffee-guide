@@ -452,14 +452,24 @@ the right to put it online (see the warning below).
    optional — if you leave it empty and pick a **Release**, the player borrows
    that release's cover.*
 
-3. Set **Status** to `Published`, then save with the blue tick at the top right.
+3. If the song is also on the streaming services, paste its links into
+   **Spotify link**, **Apple Music link** and **YouTube link**. Open the song
+   on the service, use its own "Share → Copy link", and paste the whole thing
+   in.
+
+   *All three are optional and independent. Several of the band's biggest
+   songs are Music Mojo performances that were never released to streaming —
+   leave those boxes empty and the site simply shows fewer buttons. It is
+   better to leave one blank than to paste a link to a different recording.*
+
+4. Set **Status** to `Published`, then save with the blue tick at the top right.
 
    ![The finished track with Status published and the save tick highlighted](img/ex-13-3-save.png)
 
    *Nothing appears on the website until the status is `Published` and you have
    pressed the tick.*
 
-4. That's it — the song joins the ten already there.
+5. That's it — the song joins the ten already there.
 
    > **Tip:** the order of the list is the order it plays in. Drag the rows in
    > the **Tracks** list to change it. Today they run in order of how popular
@@ -491,6 +501,12 @@ band's name.*
 is playing — automatically, a few minutes after you upload a song. There is
 nothing to set up and nothing to fill in.*
 
+*The same songs also appear in full in the **Listen** section partway down the
+homepage: a big "now playing" card on the left and the whole list on the right.
+Clicking any line in that list plays that song straight away, and the little
+Spotify / Apple / YouTube icons beside each line are the three link boxes you
+filled in above — only the ones you filled in are shown.*
+
 #### Common mistakes
 
 - Leaving **Status** on `Draft`, so the song never reaches the site.
@@ -500,6 +516,8 @@ nothing to set up and nothing to fill in.*
   starts quickly on a phone — the songs already on the site are 4–7 MB each.
 - Re-publishing the old "[placeholder] Lo-fi demo loop" row by accident. Leave
   it on `Draft`.
+- Pasting a **playlist** or **artist** link into the three link boxes instead
+  of the link to that one song, so the button sends fans to the wrong place.
 
 > **Done ✅ — check it on the website: press play in the bar on the left edge.**
 
