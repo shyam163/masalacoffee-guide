@@ -1172,8 +1172,9 @@ promise every one, but we read them all" — so nobody is owed anything.
 
 ### Seeing who wants ticket alerts
 
-Fans pick the cities they care about and give an email address. They then get
-one email whenever a show is announced in one of those cities.
+Fans pick the cities they care about when they join the family (the Join
+page asks for them). They then get one email whenever a show is announced in
+one of those cities.
 
 Fans → **Ticket alerts (subscribers)** lists them with a **Status**:
 
