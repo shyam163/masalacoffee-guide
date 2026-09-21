@@ -67,8 +67,8 @@ own menu, so the name you see on the website is the name you look for here.
 | The band's story (the **History** section at the bottom of the Band page) | **Fans → Pages** → the "History" page (one block per year — it used to be its own page, and the old address still takes people to that section) |
 | The **Releases** and **Songs & lyrics** sections of the Music page | **Music → Releases**, **Music → Songs & lyrics** (one page on the site now — the player, then the releases, then the lyrics; the old separate addresses still take people to the right section) |
 | The music player in the corner of the site | **Music → Tracks (audio for the site player)** |
-| Videos | **Media → Video collections**, **Media → Videos** |
-| Photos | **Media → Photo albums**, **Media → Photos** |
+| The **Videos** section of the Media page | **Media → Video collections**, **Media → Videos** (one page on the site now — the photo wall, then the videos, then the photo albums; the old separate addresses still take people to the right section) |
+| The photo wall and the **Photos** section of the Media page | **Media → Photo albums**, **Media → Photos** |
 | Homepage banner | **Homepage → Homepage banner** |
 | Band page photo (the big photo at the top of the Band page) | **Settings → Site settings → Band photo (top of the Band page)** |
 | Homepage tiles | **Homepage → Homepage tiles** (the "New merch" and "Latest release" tiles: leave Picture and Link empty to auto-show the newest merch / latest release, or fill them in to override) |
@@ -295,7 +295,8 @@ show recipe above — open the show and copy it from the **Web address** box).
    *Title: `Live in Kochi, Feb 2027`. Then fill in **Category** (`Live`),
    **Date** and **Location** the same way as before.*
 
-3. Pick a **Cover** picture — the one that shows on the Photos page.
+3. Pick a **Cover** picture — the one that shows in the **Photos** section of
+   the Media page.
 
    ![The file library open with the chosen cover picture circled](img/ex-03-3-cover.png)
 
@@ -590,8 +591,8 @@ within about a quarter of an hour.
 
 ### 🎬 We put a new video on YouTube
 
-**When to use this:** a new video is live on YouTube and you want it on the
-Videos page.
+**When to use this:** a new video is live on YouTube and you want it in the
+**Videos** section of the Media page.
 
 **You will need:** the YouTube link, and to know which collection it belongs
 in (music videos, live sessions, or behind the scenes).
@@ -622,7 +623,8 @@ in (music videos, live sessions, or behind the scenes).
 
 ![The new video on the Videos page](img/ex-05-4-site.png)
 
-*The video appears in that collection on the Videos page.*
+*The video appears in that collection in the **Videos** section of the Media
+page.*
 
 #### Common mistakes
 
