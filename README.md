@@ -1031,6 +1031,13 @@ Print this page and stick it on the wall.
 | Get the newsletter list | Fans → Newsletter sign-ups | Right panel → Import / Export → Export Items → CSV |
 | Undo a mistake | Any item | Right panel → **Revisions** → pick a save → **Apply** |
 
+### 🎤 Fixing the lyrics
+
+**When to use this:** the words that scroll along under the record on the
+homepage are wrong, or a line comes up too early or too late.
+
+**You will need:** ten quiet minutes and the song playing beside you.
+
 ## 9. The Fans page
 
 The Fans page now does six things that need you, and one that runs itself.
