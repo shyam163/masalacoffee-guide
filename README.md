@@ -64,6 +64,7 @@ own menu, so the name you see on the website is the name you look for here.
 | Tour names (e.g. "Kerala Tour 2026") | **Tour → Tour names** |
 | News, Press, Features, fan stories | **News → News & stories** |
 | Band members | **Band → Band members** |
+| The band's story (the **History** section at the bottom of the Band page) | **Fans → Pages** → the "History" page (one block per year — it used to be its own page, and the old address still takes people to that section) |
 | Releases, Songs & lyrics | **Music → Releases**, **Music → Songs & lyrics** |
 | The music player in the corner of the site | **Music → Tracks (audio for the site player)** |
 | Videos | **Media → Video collections**, **Media → Videos** |
