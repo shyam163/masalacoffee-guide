@@ -1030,3 +1030,135 @@ Print this page and stick it on the wall.
 | Change a product's words | Shop → Merch | Click it → **Description** or **Badges** only → blue tick |
 | Get the newsletter list | Fans → Newsletter sign-ups | Right panel → Import / Export → Export Items → CSV |
 | Undo a mistake | Any item | Right panel → **Revisions** → pick a save → **Apply** |
+
+## 9. The Fans page
+
+The Fans page now does six things that need you, and one that runs itself.
+Everything below lives in the Directus admin under **💬 Fans**, except the
+newsletter, which has its own **📣 Newsletter** folder.
+
+None of it needs a deploy. You change something, save it with the blue tick,
+and the website shows it on the next page load.
+
+### Reading the setlist votes
+
+Fans pick up to three songs they want to hear at the next announced show.
+
+- **The quick answer** is on the website itself: open `/fans/`, scroll to
+  **Pick 3 for …**, vote yourself, and the bar chart appears — that is the
+  live tally, the top ten songs and the share of voters who picked each one.
+- **The raw evidence** is Fans → **Setlist votes (fan picks)**. One row per
+  fan, newest first, with the show and the songs they picked. Filter by
+  **Show** if more than one gig has been voted on.
+
+There is no "results" screen in the admin on purpose: the chart on the site
+*is* the count, and a second number that could drift from it would be worse
+than no number. A ballot is one per browser — voting again replaces the
+earlier picks rather than stuffing the box.
+
+### Approving fan photos
+
+Fans upload photos from the Fans page. **Nothing a stranger uploads appears
+anywhere until you approve it.**
+
+1. Go to Fans → **Fan wall (photos)**. New ones are at the top, marked
+   **New — waiting for you**, with the picture right there in the list.
+2. Look at it. If it belongs on the wall, change **Status** to
+   **Approved — on the wall** and press the blue tick.
+3. It is on the site on the next page load.
+4. To take one down later, set **Status** to **Hidden**. Deleting the row
+   works too, but hiding keeps the record of who sent it.
+
+Everything except **Status** is read-only: your job here is to say yes or no,
+not to rewrite what a fan wrote. An unapproved photo is not merely hidden —
+the website's public API does not hand it out at all, so there is no address
+anyone can guess.
+
+### Handling shout-out requests
+
+Fans ask you to say someone's name from the stage — a birthday, an
+anniversary, someone who needs to hear it.
+
+Go to Fans → **Shout-out requests**. The list opens on status, name, occasion,
+who it's for, the day it's for and when it arrived, newest first, so the next
+one to act on is the top row with a **New** dot.
+
+1. Open the row and read the message.
+2. Reply from your own email to the address shown, if you want to.
+3. Move **Status**: **New** → **Approved** once you have decided to do it →
+   **Done** once it has been given.
+
+**Status** is the only field you can edit. The website's success message
+deliberately does not over-promise — "we'll try to work it in. We can't
+promise every one, but we read them all" — so nobody is owed anything.
+
+### Seeing who wants ticket alerts
+
+Fans pick the cities they care about and give an email address. They then get
+one email whenever a show is announced in one of those cities.
+
+Fans → **Ticket alerts (subscribers)** lists them with a **Status**:
+
+- **pending** — they signed up but have not clicked the link in their
+  confirmation email yet. Nothing is ever sent to a pending address.
+- **active** — confirmed. These are the people who get the alerts.
+- **unsubscribed** — they left. Leave the row alone; it is the record that
+  they asked not to be mailed.
+
+You never edit any of this — the website sets it. There is nothing to press:
+announce a show in the Tour section as usual, and within fifteen minutes every
+matching subscriber has an email with the date and the ticket link. Each show
+is announced exactly once, so editing a show later does not re-mail anyone.
+
+Fans → **Ticket alerts (sent log)** is the receipt: one row per show, with how
+many emails went out.
+
+### Writing and sending a newsletter
+
+The Join form has been collecting email addresses since the site launched.
+This is how you write to them.
+
+1. **📣 Newsletter → Newsletters → blue +.**
+2. Write it: **Subject**, an optional **Preview line** (the grey text an inbox
+   shows after the subject), an optional **Top picture**, and the **Email
+   text** — the same editor as a news story.
+3. **Test it on yourself first.** Put *your own address* in **Test email** and
+   press the blue tick, leaving **Status** on **Draft**. Within five minutes a
+   copy lands in your inbox marked `[TEST]`, and the Test email box empties
+   itself so the same test does not keep arriving. Change anything you like
+   and test again.
+4. **Send it.** Set **Status** to **Scheduled** and pick a **Send at** time —
+   or leave Send at empty, which means *now*. Press the blue tick.
+5. When it is done, **Status** becomes **Sent**, **Sent to** shows how many
+   people it reached, and **Sent at** shows when it finished.
+
+Worth knowing:
+
+- A newsletter that is **Sent** cannot be sent again. That is deliberate — it
+  is the thing that stops the list being mailed twice. Copy it into a new item
+  if you want to send it again.
+- A Test email left on a **Scheduled** or **Sent** newsletter does nothing.
+  Test copies only go out from Drafts.
+- Everyone who signed up before 21 September 2026 is already **Active** — they
+  ticked the consent box on the Join form. Only sign-ups from that day on have
+  to click a confirmation link first.
+- If you ever add a subscriber by hand in Fans → **Newsletter sign-ups**, set
+  their **Status** to **Active** yourself. A hand-made row starts as Pending
+  and would sit there waiting for a confirmation email it never asked for.
+- Every newsletter carries an unsubscribe link, and a click on it takes effect
+  immediately with no "are you sure". That is on purpose: somebody who cannot
+  get out reports you as spam instead, and that costs the whole list.
+
+### The countdown, the quiz and the map (nothing to do)
+
+- **The countdown** at the top of the Fans page reads the soonest date in
+  Tour → Tour dates. Add a show and it appears; when the show has passed it
+  disappears by itself. The **Remind me** button hands the visitor a calendar
+  file.
+- **The song quiz** plays three-second clips of the band's own songs from
+  Music → Tracks. You can take a name off the leaderboard by deleting its row
+  in Fans → **Song quiz scores**.
+- **The fan map** fills itself in: pins are approved automatically, because a
+  city from a fixed list plus a short note is not much to worry about. If a
+  pin's message is unpleasant, open Fans → **Fan map (where they saw us)**,
+  find the row and set **Status** to **Hidden**.
