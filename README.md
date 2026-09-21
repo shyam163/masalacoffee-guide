@@ -65,7 +65,7 @@ own menu, so the name you see on the website is the name you look for here.
 | News, Press, Features, fan stories | **News → News & stories** |
 | Band members | **Band → Band members** |
 | The band's story (the **History** section at the bottom of the Band page) | **Fans → Pages** → the "History" page (one block per year — it used to be its own page, and the old address still takes people to that section) |
-| Releases, Songs & lyrics | **Music → Releases**, **Music → Songs & lyrics** |
+| The **Releases** and **Songs & lyrics** sections of the Music page | **Music → Releases**, **Music → Songs & lyrics** (one page on the site now — the player, then the releases, then the lyrics; the old separate addresses still take people to the right section) |
 | The music player in the corner of the site | **Music → Tracks (audio for the site player)** |
 | Videos | **Media → Video collections**, **Media → Videos** |
 | Photos | **Media → Photo albums**, **Media → Photos** |
@@ -401,7 +401,7 @@ art, and the Spotify and Apple links.
 
 #### What it looks like on the site
 
-![The new single on the Releases page](img/ex-04-6-site.png)
+![The new single in the Releases section of the Music page](img/ex-04-6-site.png)
 
 *The release now appears on the Music page, with its cover and date.*
 
@@ -412,7 +412,8 @@ art, and the Spotify and Apple links.
 - Putting the release in the wrong **Category** — it decides which shelf of
   the Music page it sits on.
 
-> **Done ✅ — check it on the website at `/releases/`.**
+> **Done ✅ — check it on the website at `/music/` (the **Releases** part,
+> partway down the page).**
 
 </div>
 
