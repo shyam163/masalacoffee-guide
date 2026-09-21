@@ -62,7 +62,7 @@ own menu, so the name you see on the website is the name you look for here.
 | --- | --- |
 | Tour dates | **Tour → Tour dates** |
 | Tour names (e.g. "Kerala Tour 2026") | **Tour → Tour names** |
-| News, Press, Features, fan stories | **News → News & stories** |
+| News, Press, Features, fan stories | **News → News & stories** (the site shows News, Press and Features on one page now — the **Category** you pick still decides which tab the article appears under, and the old separate addresses still take people to the right tab) |
 | Band members | **Band → Band members** |
 | The band's story (the **History** section at the bottom of the Band page) | **Fans → Pages** → the "History" page (one block per year — it used to be its own page, and the old address still takes people to that section) |
 | The **Releases** and **Songs & lyrics** sections of the Music page | **Music → Releases**, **Music → Songs & lyrics** (one page on the site now — the player, then the releases, then the lyrics; the old separate addresses still take people to the right section) |
@@ -700,7 +700,12 @@ of the post.
 - Pasting a YouTube link in the middle of a sentence — it only turns into a
   video when it is alone on its own line.
 
-> **Done ✅ — check it on the website at `/news/`.**
+> **Done ✅ — check it on the website at `/news/`.** Everything you file under
+> News, Press or Features lands on that one page, newest first, with a little
+> tag showing which of the three it is. The buttons across the top — **All ·
+> Latest · Press · Features** — let visitors narrow it down. You do not change
+> anything to make that work: keep filing articles under the **Category** you
+> always did.
 
 </div>
 
