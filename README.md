@@ -436,23 +436,50 @@ the right to put it online (see the warning below).
 1. Open **🎵 Music → Tracks (audio for the site player)** in the left-hand menu.
    This is the list of everything the player can play.
 
-   ![The Directus menu with Tracks highlighted](img/ex-13-1-tracks-list.png)
+   ![The Directus menu with Tracks highlighted](user-guide/img/ex-13-1-tracks-list.png)
 
-   *You will see the band's ten songs, in the order they play, plus one greyed-out
-   row called "[placeholder] Lo-fi demo loop" — that is the old stand-in tune,
-   kept but switched off.*
+   *You will see the band's twelve songs, in the order they play, plus four
+   greyed-out rows: "[placeholder] Lo-fi demo loop" (the old stand-in tune,
+   kept but switched off) and three showcase songs that are still **waiting
+   for their audio** — see "Three songs waiting for their audio" below.*
 
 2. Click the blue **+** at the top right. Fill in the **Title** (and the
    **Artist**, if it is not just "Masala Coffee"), then click the
    **Audio file** box and choose your MP3 from your computer.
 
-   ![The new track form with the Audio file box highlighted](img/ex-13-2-new-track.png)
+   ![The new track form with the Audio file box highlighted](user-guide/img/ex-13-2-new-track.png)
 
    *Only the **Title** and the **Audio file** are required. **Cover picture** is
    optional — if you leave it empty and pick a **Release**, the player borrows
    that release's cover.*
 
-3. If the song is also on the streaming services, paste its links into
+3. Say whose song it is. **Original or cover** is a dropdown with three
+   choices:
+
+   | Choose | When |
+   |---|---|
+   | **Original — the band's own song** | Masala Coffee wrote it. |
+   | **Cover — someone else's song** | Somebody else wrote it and the band plays it. Munbe Vaa and Kuttanaadan are covers. |
+   | **Film song the band composed** | The band wrote it for a film — the two *Uriyadi* songs. |
+
+   If you chose **Cover**, fill in **Cover of (artist – song)** as
+   `A.R. Rahman – Munbe Vaa`. The website shows that on the row as
+   "Cover · A.R. Rahman", and visitors can filter the list down to
+   **Originals** or **Covers**. A film song counts as an original in that
+   filter, because the band wrote it.
+
+   *Leave **Cover of** empty on an original. If you leave **Original or cover**
+   alone it stays on "Original", which is right for most new songs.*
+
+4. Tick **Showcase (main songs)** if this is one of the band's headline
+   songs. Showcase songs get a small yellow star in the player and are
+   listed **first**, above everything else, whatever the Sort order says.
+
+   *Keep it to a handful — a showcase that holds everything showcases
+   nothing. Today it is Dil Ka Pata, Paint It Over Me and Aalayal Thara
+   Venam, plus the three songs still waiting for their audio.*
+
+5. If the song is also on the streaming services, paste its links into
    **Spotify link**, **Apple Music link** and **YouTube link**. Open the song
    on the service, use its own "Share → Copy link", and paste the whole thing
    in.
@@ -462,22 +489,24 @@ the right to put it online (see the warning below).
    leave those boxes empty and the site simply shows fewer buttons. It is
    better to leave one blank than to paste a link to a different recording.*
 
-4. Set **Status** to `Published`, then save with the blue tick at the top right.
+6. Set **Status** to `Published`, then save with the blue tick at the top right.
 
-   ![The finished track with Status published and the save tick highlighted](img/ex-13-3-save.png)
+   ![The finished track with Status published and the save tick highlighted](user-guide/img/ex-13-3-save.png)
 
    *Nothing appears on the website until the status is `Published` and you have
    pressed the tick.*
 
-5. That's it — the song joins the ten already there.
+7. That's it — the song joins the ones already there.
 
-   > **Tip:** the order of the list is the order it plays in. Drag the rows in
-   > the **Tracks** list to change it. Today they run in order of how popular
-   > each song is (Kaantha Njaanum Varaam first, then Munbe Vaa, then Aalayal
-   > Thara Venam); if you would rather lead with a new single, just drag it to
-   > the top.
+   > **Tip:** the order of the list is the order it plays in — with one rule
+   > on top of it: **showcase songs always come first**. Drag the rows in the
+   > **Tracks** list to change the order inside each group. Today the three
+   > showcase songs lead (Dil Ka Pata, Paint It Over Me, Aalayal Thara
+   > Venam), and the rest follow in order of how popular each song is
+   > (Kaantha Njaanum Varaam, then Munbe Vaa, and so on). To lead with a new
+   > single, tick **Showcase** on it and drag it to the top.
 
-   > **A note on how loud it is.** The ten songs already on the site were all
+   > **A note on how loud it is.** The songs already on the site were all
    > levelled to the same loudness, so none of them jumps out. A song you upload
    > yourself has not been through that, so it may sound noticeably louder or
    > quieter than the rest. If it does, ask whoever looks after the site to run
@@ -485,7 +514,7 @@ the right to put it online (see the warning below).
 
 #### What it looks like on the site
 
-![The music player as a small play-button disc on the homepage, with a note explaining it click the small disc to play; hover it to open the full controls](img/ex-13-4-player.png)
+![The music player as a small play-button disc on the homepage, with a note explaining it click the small disc to play; hover it to open the full controls](user-guide/img/ex-13-4-player.png)
 
 *It starts as a small circle against the left edge, halfway down, showing
 nothing but a play button — click it and it starts playing right there,
@@ -497,6 +526,12 @@ few seconds after they stop interacting with it, or if they press Escape. On a
 phone it sits against the **right** edge instead, so it stays clear of the
 band's name.*
 
+*At the very bottom of the open bar there is a small **Pulse** switch (a
+heartbeat line). It is off unless a visitor turns it on; when it is on, the
+band's name, the section rules and the yellow and red buttons breathe gently
+in time with whatever is playing. The site remembers each visitor's choice in
+their own browser, and it never turns itself on.*
+
 *The coloured rings drifting behind the homepage follow the beat of whatever
 is playing — automatically, a few minutes after you upload a song. There is
 nothing to set up and nothing to fill in.*
@@ -506,6 +541,32 @@ homepage: a big "now playing" card on the left and the whole list on the right.
 Clicking any line in that list plays that song straight away, and the little
 Spotify / Apple / YouTube icons beside each line are the three link boxes you
 filled in above — only the ones you filled in are shown.*
+
+*Above that list there is a row of three buttons — **All · Originals ·
+Covers** — which comes straight from the **Original or cover** box on each
+track, and each line carries a small tag saying "Original", "Film song" or
+"Cover · A.R. Rahman". The showcase songs sit at the top with a yellow star
+beside the title.*
+
+#### Three songs waiting for their audio
+
+Three of the band's showcase songs are already in **Tracks** but have no audio
+file yet: **The Psy of Kailasa**, **Kavava** and **Kaatre En Vasal**. Their
+titles, their Spotify / Apple / YouTube links and their Showcase tick are all
+filled in; they are set to `Draft`, so they do **not** appear on the website.
+
+To put one live, there are exactly two things to do:
+
+1. Open the row, click the **Audio file** box and choose the MP3.
+2. Change **Status** from `Draft` to `Published` and press the blue tick.
+
+That is all — no one needs to touch the code. The song appears in the player
+at the top of the list with its star, and the beat animation fills itself in
+within about a quarter of an hour.
+
+> The audio has to be an MP3 or M4A of the finished master. If all you have is
+> a WAV, hand it to whoever looks after the site and they will run it through
+> the same loudness step as the rest.
 
 #### Common mistakes
 
@@ -1020,7 +1081,8 @@ Print this page and stick it on the wall.
 | Put up photos | Media → Photo albums | Blue **+**, fill in, **Show Slug**, Photos → Create New, blue tick |
 | Add a song | Music → Songs & lyrics | Blue **+**, title + written by, `Published`, blue tick |
 | Add a release | Music → Releases | Blue **+**, cover + links, Tracks → Add Existing, blue tick |
-| Add a song to the site player | Music → Tracks (audio for the site player) | Blue **+**, Title + **Audio file** (MP3/M4A), `Published`, blue tick |
+| Add a song to the site player | Music → Tracks (audio for the site player) | Blue **+**, Title + **Audio file** (MP3/M4A), **Original or cover**, `Published`, blue tick |
+| Make a song a showcase song | Music → Tracks (audio for the site player) | Open it, tick **Showcase (main songs)**, blue tick — it jumps to the top of the player with a star |
 | Add a video | Media → Videos | Blue **+**, paste **just the ID**, pick the collection, blue tick |
 | Write a news post | News → News & stories | Blue **+**, `Draft` while writing, `Published` when ready |
 | Change the homepage banner | Homepage → Homepage banner | Click it → **Button text** / **Button link** → blue tick |
