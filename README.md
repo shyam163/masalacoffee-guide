@@ -62,7 +62,7 @@ own menu, so the name you see on the website is the name you look for here.
 | --- | --- |
 | Tour dates | **Tour → Tour dates** |
 | Tour names (e.g. "Kerala Tour 2026") | **Tour → Tour names** |
-| News, Press, Features, fan stories | **News → News & stories** (the site shows News, Press and Features on one page now — the **Category** you pick still decides which tab the article appears under, and the old separate addresses still take people to the right tab) |
+| News, Press, Features, fan stories, club news | **News → News & stories** (the site shows News, Press and Features on one page now — the **Category** you pick still decides which tab the article appears under, and the old separate addresses still take people to the right tab). Articles filed as **Fan stories** or **Club news** appear on the **Fans** page instead, in its **Stories & club news** section, with a tab for each |
 | Band members | **Band → Band members** |
 | The band's story (the **History** section at the bottom of the Band page) | **Fans → Pages** → the "History" page (one block per year — it used to be its own page, and the old address still takes people to that section) |
 | The **Releases** and **Songs & lyrics** sections of the Music page | **Music → Releases**, **Music → Songs & lyrics** (one page on the site now — the player, then the releases, then the lyrics; the old separate addresses still take people to the right section) |
@@ -73,10 +73,12 @@ own menu, so the name you see on the website is the name you look for here.
 | Band page photo (the big photo at the top of the Band page) | **Settings → Site settings → Band photo (top of the Band page)** |
 | Homepage tiles | **Homepage → Homepage tiles** (the "New merch" and "Latest release" tiles: leave Picture and Link empty to auto-show the newest merch / latest release, or fill them in to override) |
 | Help, Terms, Privacy, Fans pages | **Fans → Pages** |
+| The **Join the family** form, **Stories & club news** and **Write to us** | Nothing to edit here — they are sections of the **Fans** page now (they used to be pages of their own, and the old addresses still take people to the right section). Sign-ups still land in **Fans → Newsletter sign-ups**, messages in **Fans → Write to us (fan messages)**, and the stories are ordinary articles in **News → News & stories** |
 | Newsletter sign-ups | **Fans → Newsletter sign-ups** |
 | FAQ / the chatbot's answers | **Fans → FAQ & chatbot answers** |
 | Shop | **Shop → Merch (auto-synced)** |
 | Band name, tagline, social links, chatbot | **Settings → Site settings** |
+| Manager's name, phone and email (the **Management** card, first in the grid of cards on the Contact page) | **Settings → Site settings → Manager name / Manager phone / Manager email** — leave any of the three empty to hide that row, or leave all three empty to hide the whole card (Booking and press then comes first) |
 
 ## 2. Logging in
 
@@ -707,7 +709,8 @@ of the post.
 > tag showing which of the three it is. The buttons across the top — **All ·
 > Latest · Press · Features** — let visitors narrow it down. You do not change
 > anything to make that work: keep filing articles under the **Category** you
-> always did.
+> always did. An article filed as **Fan stories** or **Club news** shows on the
+> **Fans** page instead (the **Stories & club news** section, one tab each).
 
 </div>
 
@@ -1172,8 +1175,8 @@ promise every one, but we read them all" — so nobody is owed anything.
 
 ### Seeing who wants ticket alerts
 
-Fans pick the cities they care about when they join the family (the Join
-page asks for them). They then get one email whenever a show is announced in
+Fans pick the cities they care about when they join the family (the **Join
+the family** form on the Fans page asks for them). They then get one email whenever a show is announced in
 one of those cities.
 
 Fans → **Ticket alerts (subscribers)** lists them with a **Status**:
