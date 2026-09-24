@@ -242,7 +242,7 @@ has already happened.
    | Pick this | What happens on the website |
    | --- | --- |
    | **Sold out** | A "Sold out" tag shows; the ticket button stops working |
-   | **Past** | The show leaves the Tour page and joins `/tour/past/` |
+   | **Past** | The show moves from **Upcoming shows** to **Past shows**, further down the same Tour page (`/tour/#past`) |
    | **Upcoming** | Back to normal, tickets on sale |
 
    *Then change **Ticket status lines** to match, for example:*
@@ -919,7 +919,10 @@ page.
 - Editing the price or the stock here. It will be overwritten within hours.
 - Deleting a product. The next sync brings it straight back.
 
-> **Done ✅ — check it on the website at `/shop/`.**
+> **Done ✅ — check it on the website at `/shop/`.** The Shop is one page:
+> the category cards near the top show just that kind of product, the New /
+> Best sellers / Sale tabs sit below them, and **Visit the official store**
+> at the top opens MerchGarage.
 
 </div>
 
